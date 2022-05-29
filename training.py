@@ -157,7 +157,6 @@ def train_the_model():
     # # model = cv2.face.LBPHFaceRecognizer_create()
     # # model.train(photo, ta)
 
-    # # pic = '/Users/drs/Desktop/BackIllinois/HackIllinois22-FaceRec/datasets/Himnish/2.png'
 
     # # def confid(pic):
     # #     confidence = model.predict(pic)

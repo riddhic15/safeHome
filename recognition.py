@@ -67,7 +67,7 @@ def recog(names):
             cv2.putText(img, str(confidence), (x+5,y+h-5), font, 1, (255,255,0), 1)
             if(tempid=="Unrecognised"):
                 global count
-                if(count < 5):
+                if(count < 1):
                     print(tempid)
                     img_name = "unknownPerson{}.jpg".format(img_counter)
                     cv2.imwrite(img_name, img)
