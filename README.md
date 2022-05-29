@@ -1,8 +1,7 @@
 # Safe Home App - Built during Engage Mentorship Program 2022
 
-*Project Dem0 Link* - ***https://drive.google.com/file/d/1Iz7IrT2musOWkGsx0pbTWj9Y7KIlKyME/view?usp=sharing***
+*Project Demo Link* - ***https://drive.google.com/file/d/1Iz7IrT2musOWkGsx0pbTWj9Y7KIlKyME/view?usp=sharing***
 
-## Demo Video: https://youtu.be/FcB9lVe-f8s
 ![image](https://user-images.githubusercontent.com/60353660/170884695-8b66a7a4-3d23-401d-8580-f8113b3af148.png)
 
 
