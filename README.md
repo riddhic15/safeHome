@@ -67,4 +67,3 @@ In accordance with the principles of Agile Methodology, this project has been bu
 
 1. pip install -r requirements.txt
 2. flask run
-3.
