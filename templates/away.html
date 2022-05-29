@@ -1,0 +1,24 @@
+{% extends "base_template.html" %}
+{% block heading %}
+AWAY-MODE
+{% endblock %}
+{% block heading2 %}
+AWAY-MODE
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8  offset-lg-2">
+        <div class="d-flex justify-content-center">
+            <img id = "video-img" src="{{ url_for('video_feed_recog') }}" width="100%">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8  offset-lg-2">
+        <div class="row d-flex justify-content-center align-items-center">
+            <button type="button" class="page-btns btn btn-outline-secondary mx-1"><a href="{{ url_for('home')}}" style="color: black; text-decoration: antiquewhite;">Home-Mode</a></button>
+            <button type="button" class="page-btns btn btn-outline-secondary mx-1"><a href="{{ url_for('recognized')}}" style="color: black; text-decoration: antiquewhite;">Added Members</a></button>
+        </div>
+    </div>
+</div>
+{% endblock %}

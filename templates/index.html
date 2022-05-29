@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>safeHome</title>
+<link rel="icon" href="/static/home.png" type="image/icon type">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-image: url(static/house1.jpg);
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="{{ url_for('index') }}" class="w3-bar-item w3-button w3-wide">safeHome</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"> ABOUT</a>
+      <a href="#features" class="w3-bar-item w3-button"> FEATURES</a>
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-button"> APP</a>
+      <!-- <a href="#pricing" class="w3-bar-item w3-button"> PRICING</a> -->
+      <a href="#contact" class="w3-bar-item w3-button"> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">CLOSE ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button">FEATURES</a>
+  <a href="{{ url_for('home') }}" onclick="w3_close()" class="w3-bar-item w3-button">App</a>
+  <!-- <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a> -->
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-grey" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Keep your home secure, always</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Keep your home secure, always</span><br>
+    <span class="w3-large">Ensure 24x7 security of your home with us, while you remain stress free.</span>
+    <p><a href="{{ url_for('home') }}" class="w3-button w3-grey w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"><strong>Start Now</strong></a></p>
+  </div> 
+</header>
+
+<!-- About -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="about">
+  <div class="w3-row-padding">
+    <div class="w3-col m12 l6">
+      <h3>About Us</h3>
+      <p>At safeHome, we understand the fear one may feel to leave home even for a couple of hours in the current times when news of crimes with no one at home has become so common. Thus, our objective is to ensure safety of the home at all times.</p>
+      <p>This is achieved through the leveraging the power of modern technology to revolutionize our living.</p>
+      <p><a href="{{ url_for('home')}}" class="w3-button w3-black"><i class="fa fa-th"> </i> Start Now</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-hide-small w3-hide-medium w3-round-large" src="/static/safeHome.png" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Features Section -->
+<div class="w3-container" style="padding:128px 16px" id="features">
+  <h3 class="w3-center">Features</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-camera w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Monitor</p>
+      <p>Continuous monitoring to ensure complete safety while there's no one at home.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Add Members</p>
+      <p>Recognizes faces of the family members in order to alert owners on detecting unrecognised faces.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-bell w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Alert</p>
+      <p>In case of strange activity, owner is instantly alerted through mail service.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Mode Flexibility</p>
+      <p>Offers a feature to switch to either home mode or away mode, depending on whether owners are at home.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+  <div style="margin-top:48px">
+    <p class="w3-col m4"><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Delhi, India</p>
+    <p class="w3-col m4"><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 977xxxxxxx</p>
+    <p class="w3-col m4"><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: safeHome.official@gmail.com</p>
+    <br>
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form> -->
+    <!-- Image of location/map -->
+    <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Copyright © 2022 <a href="#home" title="safeHome" target="_blank" class="w3-hover-text-grey">safeHome</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

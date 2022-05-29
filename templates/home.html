@@ -1,0 +1,40 @@
+{% extends "base_template.html" %}
+{% block heading %}
+HOME-MODE
+{% endblock %}
+{% block heading2 %}
+HOME-MODE
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-8  offset-lg-2">
+        <div class="d-flex justify-content-center">
+            <img id = "video-img"src="{{ url_for('video_feed_recog') }}" width="80%" height="60%">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-8  offset-lg-2">
+        <div class="row d-flex justify-content-center align-items-center">
+            <button type="button" class="page-btns btn btn-outline-secondary mx-1"><a href="{{ url_for('away')}}" style="color: black; text-decoration: antiquewhite;">Away-Mode</a></button>
+            <button type="button" class="page-btns btn btn-outline-secondary mx-1"><a href="{{ url_for('recognized')}}" style="color: black; text-decoration: antiquewhite;">Added Members</a></button>
+        </div>
+    </div>
+</div>
+<!-- <div class="w3-container w3-center">
+    <div class="row w3-bar">
+        <div class="row d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
+                <form method="post" action="">
+                    <button type='submit' name="check" value="away" class="w3-button w3-pale-yellow w3-round-large btn btn-info" style="margin-right:7%;"> Away-Mode </button>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="button" style="text-decoration:none; color: black;" class="w3-button w3-pale-yellow btn btn-info mb-2"><a href="recognized" style="text-decoration:none; color: black;">Added Members</a></button>
+        </div>
+    </div>
+</div> -->
+{% endblock %}
+
+
