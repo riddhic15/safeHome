@@ -52,7 +52,16 @@ $ git clone https://github.com/riddhic15/safeHome.git
 ```
 $ cd safeHome
 ```
-3. Make sure you have python and flask installed in your system. Install all other dependencies that have been used in the project using pip:
+3. Make sure you have python and pip are installed in your system. Do this with the following commands:
+```
+python --version
+pip --version
+```
+If they are installed, their version will be displayed. To avoid errors in installing other libraries, upgrade your pip using the following command:
+```
+pip install --upgrade pip
+```
+Install all other dependencies that have been used in the project using pip:
 ```
 pip install -r requirements.txt
 ```
@@ -60,7 +69,7 @@ pip install -r requirements.txt
 ```
 flask run
 ```
-**NOTE: If you encounter an error saying module not found or an import error while importing app after running the 4th command, install the module that is not present using pip command.**
+**NOTE: If you encounter an error saying module not found or an import error while importing app after running the 4th command, install the dependency that has lead to the error.**
 
 ## Objective Behind the Project
 
