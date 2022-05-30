@@ -13,6 +13,16 @@ The prime objective of this project is to combat the constant fear of any mishap
 
 The main goal of the project is to prevent crime and help people lead a safer and stressfree life. Face recognition allows the application to recognise and remember the faces of added members. Thus, it is able to detect unrecognised people by distinguishing them from the added people who may have broken into the home with fraudulent intentions. So, this recognition technology combined with emotion recognition result in success of this project.
 
+
+## Steps to run in your machine
+
+#### Run the following commands
+
+1. pip install -r requirements.txt
+2. flask run
+
+**Special Instruction: Please ensure you have installed python, flask and all other python libraries that have been imported/used in the project. Until any library is left to be installed, it will not work properly.**
+
 ## Features
 Some of the features included in this app are:
 
@@ -90,10 +100,3 @@ In accordance with the principles of Agile Methodology, this project has been bu
 
 
 <br></br>
-
-## Steps to run in your machine
-
-#### Run the following commands
-
-1. pip install -r requirements.txt
-2. flask run
