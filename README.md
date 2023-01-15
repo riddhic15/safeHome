@@ -10,7 +10,7 @@
   <summary>Table of Contents</summary>
   <ol>
    <li>
-      <a href="steps-to-run-in-your-machine">Steps to run in your machine</a>
+      <a href="#steps-to-run-in-your-machine">Steps to run in your machine</a>
     </li>
     <li>
       <a href="#objective-behind-the-project">Objective behind the Project</a>
@@ -22,7 +22,7 @@
    <li><a href="#features-description">Features Description</a></li>
       <ul>
         <li><a href="#add-member">Add Members</a></li>
-        <li><a href="#confidenc-rating">Confidence Rating</a></li>
+        <li><a href="#confidence-rating">Confidence Rating</a></li>
         <li><a href="#alert-system">Alert System</a></li>
         <li><a href="#away-mode">Away Mode</a></li>
        <li><a href="#home-mode">Home Mode</a></li>
